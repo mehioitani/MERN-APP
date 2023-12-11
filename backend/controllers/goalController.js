@@ -13,7 +13,7 @@ export const getGoals = asyncHandler(async (req, res) => {
 
 // @desc    Create goals
 // @route   POST /api/goals/:id
-// @access  Private
+// @access  Private 
 export const createGoal = asyncHandler(async (req, res) => {
     if (!req.body.text) {
         res.status(400)
